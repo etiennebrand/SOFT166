@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calc</title>
+</head>
+<body>
+
+<h3>Calculator</h3>
+
+<div>
+
+  <form>
+
+    <h1 id="number1"></h1>
+
+    Input 1  <input id="input1" type="number" name="input1"><br><br>
+    Input 2  <input id="input2" type="number" name="input2"><br><br>
+
+    <button onclick="add()" style="background-color:lightskyblue">+</button>
+    <button onclick="sub()" style="background-color:lightskyblue">-</button>
+    <button onclick="mult()" style="background-color:lightskyblue">*</button>
+    <button onclick="div()" style="background-color:lightskyblue">/</button>
+
+  </form>
+
+  <script>
+      function add()
+      {
+          var input1var = document.getElementById("input1").value;
+          var input2var = document.getElementById("input2").value;
+          var ans = (+input1var + +input2var);
+
+          alert(ans);
+      }
+      function sub()
+      {
+          var input1var = document.getElementById("input1").value;
+          var input2var = document.getElementById("input2").value;
+          var ans = (+input1var - +input2var);
+
+          alert(ans);
+      }
+      function mult()
+      {
+          var input1var = document.getElementById("input1").value;
+          var input2var = document.getElementById("input2").value;
+          var ans = (+input1var * +input2var);
+
+          alert(ans);
+      }
+      function div()
+      {
+          var input1var = document.getElementById("input1").value;
+          var input2var = document.getElementById("input2").value;
+          var ans = (+input1var / +input2var);
+
+          alert(ans);
+      }
+
+  </script>
+
+</div>
+
+</body>
+</html>
