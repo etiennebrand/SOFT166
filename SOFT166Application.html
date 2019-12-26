@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h3  {text-align: center}
+  </style>
+    <meta charset="UTF-8">
+    <title>Password Strength Checker</title>
+</head>
+
+<body style="background-color:lightskyblue">
+
+<h1 style="text-align:center; border:2px solid; margin-left:150px; margin-right:150px"> Password Strength Checker</h1><br>
+
+<h3> Enter a Password:</h3>
+
+<form style="border:2px solid; padding:6px; margin-left: 140px; margin-right: 140px">
+
+<input type="password" name="psw" style="height:25px; width:427px"><br>
+  <button>Test</button>
+  <button>Reset</button>
+  <br><br><meter value="1" min="0" max="4" style="height:20px; width:200px"></meter>
+<strong> *PASSWORD IS VERY WEAK*</strong>
+</form>
+
+<br>
+
+<h3> How to Strengthen Your Password:</h3>
+
+<ul>
+  <li> Password should contain at least 8 characters.</li>
+  <li> Password should contain a mix of characters and numbers.</li>
+  <li> Password should contain at least 1 special character.</li>
+  <li> Password should not contain words that others may be able to guess</li>
+</ul>
+
+</body>
+</html>
+
+<!--
+Functionality:
+(JavaScript)
+Enforce good password practice by displaying a warning if the input is less than 8 characters
+{
+1. Get the length of the input by using the .length feature
+2. If statement that executes code to show warning if .length < 8 characters
+-->
