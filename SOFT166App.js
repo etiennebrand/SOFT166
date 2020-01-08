@@ -6,14 +6,21 @@ num.Numbers = 0;
 num.Symbols = 0;
 var strengthScore;
 
-function test() {
+var lightColour;
+
+
+function test(lightID, lightColour) {
 
   var password = document.getElementById("inputPassword");
   var baseScore;
 
   if (password.value.length < 8) {
-    document.getElementById("result").innerHTML = "Password too Short";
+
+
     window.alert("The password entered is too short.");
+    switchLightOn(6, lightColour = 0);
+
+
   } else {
     baseScore = 50;
   }
@@ -77,27 +84,59 @@ function test() {
 
   strengthScore = baseScore + lengthBonus + complexityScore;
 
-  alert(strengthScore);
-
   if (strengthScore < 100) {
-      //document.getElementById("result").innerHTML = "Password is very weak"
-      alert("Password is very weak")
+    //document.getElementById("result").innerHTML = "Password is very weak"
+    alert("Password is very weak");
+    switchLightOn(5, 0);
   }
   if (strengthScore >= 100 && strengthScore < 150) {
-      //document.getElementById("result").innerHTML = "Password is average"
-      alert("Password is average")
+    //document.getElementById("result").innerHTML = "Password is average"
+    alert("Password is average");
+    switchLightOn(2, 7500);
   }
   if (strengthScore >= 150 && strengthScore < 200) {
-      //document.getElementById("result").innerHTML = "Password is strong"
-      alert("Password is strong")
+    //document.getElementById("result").innerHTML = "Password is strong"
+    alert("Password is strong");
+    switchLightOn(4, 13000);
   }
   if (strengthScore >= 200) {
-      //document.getElementById("result").innerHTML = "Password is very secure"
-      alert("Password is very secure")
+    //document.getElementById("result").innerHTML = "Password is very secure"
+    alert("Password is very secure");
+    switchLightOn(1,  25500);
   }
+  var meter = document.getElementById("meter");
+  meter.value = strengthScore;
 }
 function clear()
 {
   document.getElementById("inputPassword").value="";
 }
 
+
+function switchLightOff(lightID)  //This function takes a light ID number.  It then switches the given light on or off.
+{
+  var lightCommand = {"on": false}; //this creates a string of  { "on" : false }
+  var lightURI = "http://192.168.0.50/api/stlaB2I6VZ8O80Qepc-1xfmLrHgyTFvB9IGupaQz/lights/" + lightID + "/state/";
+
+  $.ajax({
+    url: lightURI,  //calls function getLightURI (see below) and passes the required light ID
+    type: "PUT",
+    data: JSON.stringify(lightCommand)  //translates contents of lightCommand variable into jSON code
+  })
+}
+
+
+function switchLightOn(lightID, lightColour) {
+  var lightCommand = {"on": true, "hue": (lightColour), "bri":250}; //replace 25500 with the different colours?
+  var lightURI = "http://192.168.0.50/api/stlaB2I6VZ8O80Qepc-1xfmLrHgyTFvB9IGupaQz/lights/" + lightID + "/state/";
+
+
+  console.log(lightCommand);
+  console.log(lightURI);
+
+  $.ajax({
+    url: lightURI,
+    type: "PUT",
+    data: JSON.stringify(lightCommand)
+  })
+}
