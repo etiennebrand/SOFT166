@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="GB-UK">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-left: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body style="background-color:lightskyblue">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color:white">
+  <!-- Avatar image in top left corner -->
+  <img src="img/IMG_1541.jpg" alt="Face" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS OF APP</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>LIGHTS INFO</p>
+  </a>
+  <a href="#index" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>INDEX</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS OF APPLICATION</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">LIGHTS INFO</a>
+    <a href="#index" class="w3-bar-item w3-button" style="width:25% !important">INDEX</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Welcome</span> </h1>
+    <p>To My Website</p>
+
+  </header>
+<br><br>
+  <a href="SOFT166App.html" style="text-align: center">Password Strength Checker</a>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+    <h2 class="w3-text-black">Etienne Brand</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p style="color: black"> Etienne is currently studying Computer and Information Security at the University of Plymouth. Having had no
+      previous programming or computing experience before starting his degree; Etienne has worked tireless at steadily
+      improving his abilities. Etienne has a passion to make a difference in national security - and thus hopes to
+      gain employment with GCHQ upon leaving university.
+    </p>
+    <h3 class="w3-padding-16 w3-text-black">My Skills</h3>
+    <p class="w3-wide">Software Engineering</p>
+    <div class="w3-white">
+      <div class="w3-black" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-black" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Business Networking</p>
+    <div class="w3-white">
+      <div class="w3-black" style="height:28px;width:90%"></div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">200+</span><br>
+        LinkedIn Views
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">176</span><br>
+        Instagram Follows
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">18+</span><br>
+        Months Exp.
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-black">My Resources</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">GitHub</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">JavaScript</li>
+          <li class="w3-padding-16">HTML Design</li>
+          <li class="w3-padding-16">Software Engineering</li>
+          <li class="w3-padding-16">
+            <h2>SOFT166</h2>
+            <span class="w3-opacity">Repository</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://github.com/etiennebrand/SOFT166">Visit Repo</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Trello</li>
+          <li class="w3-padding-16">Things I Need to Do</li>
+          <li class="w3-padding-16">Things I'm Doing</li>
+          <li class="w3-padding-16">Things I've Done</li>
+          <li class="w3-padding-16">
+            <h2>Project Management</h2>
+            <span class="w3-opacity">Kanban Board</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://trello.com/b/g2xkchZM/soft166">Visit Board</a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Grid/Pricing tables -->
+    </div>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-black">Website Feedback</h3>
+    <p><span class="w3-large w3-margin-right">Ciara Whelan</span> Medicine</p>
+    <p>"The fonts and colours of the application make it very pleasant to read and very understandable. The strength
+      checker could perhaps be improved by directly informing the user how to achieve the more secure readouts."</p><br>
+
+    <p><span class="w3-large w3-margin-right">Beth D'Arcy</span> Biomedical Sciences</p>
+    <p>"Etienne's website is modern looking, with colours that work well together and are easy on the eyes. The website
+    could be improved by adding visual aids that help show how the lights respond to the strength of passwords."</p>
+    <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-black">Application Working in Various Browsers</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div>
+        <p> Application Running in Chrome</p>
+        <img src="img/chrome_application.png" alt="Chrome Screenshot" style="width:100%; border: 2px solid;"><br>
+        <p> Application Running in Safari</p>
+        <img src="img/Safari_Application.png" alt="safari screenshot" style="width:100%; border: 2px solid;">
+      </div>
+
+      <!-- End photo grid -->
+    </div>
+    <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-lightskyblue" id="contact">
+    <h2 class="w3-text-black">Lights Info</h2>
+    <hr style="width:200px" class="w3-opacity">
+      <img src="img/secure_password.png" alt="green light" style="width:40%; height:40%">
+        <p> The top-left light (Light ID = 1) will illuminate green when a secure password is entered. </p>
+      <img src="img/strong_password1.png" alt="yellow light" style="width:40%; height:40%">
+        <p> The top-right light (Light ID = 4) will illuminate yellow when a strong password is entered. </p>
+      <img src="img/average_password1.png" alt="amber light" style="width:40%; height:40%">
+        <p> The middle-left light (Light ID = 2) will illuminate orange when an average password is entered.</p>
+      <img src="img/weak_password.png" alt="red light" style="width:40%; height:40%">
+        <p> The middle-right light (Light ID = 5) will illuminate red when a weak password is entered.</p>
+      <img src="img/too_short_password.png" alt="red light" style="width:40%; height:40%">
+        <p> The lower-right light (Light ID = 6) will illuminate red when too short a password is entered.</p>
+
+    <!-- End Contact Section -->
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-lightskyblue" id="index">
+    <h2 class="w3-text-black">Index</h2>
+    <hr style="width:200px" class="w3-opacity">
+      <h3> About this Application </h3>
+        <p> This application has been produced to fulfill the specification requirements for the practice element
+        of the SOFT166 module. The application features several individual segments that are connected to the same
+        overall page, with a fast-navigation panel for ease of use. The Password Strength Checker itself relies on an
+        algorithm that checks for the complexity of the password based on whether it is alphanumeric or incorporates
+        symbols; as well as the length. A strength score is calculated as an output of this algorithm, with certain
+        strength scores assigned to be weak, average, strong or secure.</p><br>
+      <h3> How I Responded to Feedback</h3>
+        <p> During the development process of the application, an effort was made to obtain valuable feedback from
+        people that would be potential users of the application. In particular, feedback was
+        obtained from individuals who are not on computing courses, so that it can be ensured that lay-users can fully
+        understand and effectively use this application. <br>
+        In particular, feedback from Ciara Whelan (Student of Medicine) was particularly helpful, as her advice led
+        to changes in the Password Strength Checker to provide direct feedback as to how the user can achieve a higher
+        classification of password strength.</p>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <br><br>
+    <a href="SOFT166App.html">Password Strength Checker</a>
+    <!-- End footer -->
+  </footer>
+
+  <!-- END PAGE CONTENT -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <style>
+    h1  {text-align: center}
+    body, h1,h2,h3 {font-family: "Montserrat", sans-serif}
+  </style>
+  <meta charset="UTF-8">
+  <title>Password Strength Checker</title>
+  <script src="SOFT166App.js"></script>
+</head>
+
+<body style="background-color:lightskyblue">
+
+<h1 style="border:2px solid; margin-left:150px; margin-right:150px"> Password Strength Checker</h1><br>
+
+<h3 style="text-align:center"> Enter a Password:</h3>
+
+<form style="border:2px solid; padding:6px; margin-left: 450px; margin-right: 450px">
+
+  <input type="password" id="inputPassword" style="height:25px; width:500px; font-size: 150%"><br>
+
+  <!--
+  HTML tags to create "Test" and "Reset" buttons on form - JavaScript onclick functions called
+  -->
+  <button onclick="test()"> Test </button>
+  <button onclick="clear()"> Reset </button>
+
+  <!--
+  Meter to indicate the strength of the password entered; dynamically changes according to advice criteria fulfilled
+  -->
+  <br><br><meter id = meter value="1" min="1" max="250" low=100" high="150" optimum="250" style="height:20px; width:275px; color:white"; ></meter>
+
+  <h2 id="result"></h2>
+
+</form>
+
+<br>
+
+<!--
+HTML tags to create a bullet-point list offering advice as to how to make a password stronger
+-->
+<h3> How to Strengthen Your Password:</h3>
+
+<ul>
+  <li> Password must contain at least 8 characters.</li>
+  <li> Password should be alphanumeric (contain both characters and numbers).</li>
+  <li> Password should contain at least 1 special character (e.g. £, $, &, @, %).</li>
+  <li> Password should be multi-case (contain a mix of upper and lowercase characters).</li>
+</ul>
+
+<br><br>
+<a href="ProfilePage.html">Main Website</a>
+</body>
+</html>
